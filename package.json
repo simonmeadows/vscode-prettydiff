@@ -20,7 +20,12 @@
                 "command": "extension.prettyDiff",
                 "title": "Prettify using Prettydiff"
             }
-        ]
+        ],
+        "keybindings": [{
+        "command": "extension.prettyDiff",
+        "key": "shift+alt+f",
+        "when": "editorLangId == nunjucks"
+    }]
     },
     "scripts": {
         "postinstall": "node ./node_modules/vscode/bin/install",
