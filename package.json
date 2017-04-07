@@ -21,11 +21,13 @@
                 "title": "Prettify using Prettydiff"
             }
         ],
-        "keybindings": [{
-        "command": "extension.prettyDiff",
-        "key": "shift+alt+f",
-        "when": "editorLangId == nunjucks"
-    }]
+        "keybindings": [
+            {
+                "command": "extension.prettyDiff",
+                "key": "shift+alt+f",
+                "when": "editorLangId == nunjucks || editorLangId == json"
+            }
+        ]
     },
     "scripts": {
         "postinstall": "node ./node_modules/vscode/bin/install",
